@@ -1,0 +1,24 @@
+[submodule "submodules/doxygen-awesome-css"]
+	path = submodules/doxygen-awesome-css
+	url = https://github.com/jothepro/doxygen-awesome-css.git
+[submodule "submodules/tbb"]
+	path = submodules/tbb
+	url = https://github.com/oneapi-src/oneTBB.git
+[submodule "submodules/range-v3"]
+	path = submodules/range-v3
+	url = https://github.com/ericniebler/range-v3.git
+[submodule "submodules/spdlog"]
+	path = submodules/spdlog
+	url = https://github.com/gabime/spdlog
+[submodule "submodules/boost-cmake"]
+	path = submodules/boost-cmake
+	url = https://github.com/Orphis/boost-cmake.git
+[submodule "submodules/htslib"]
+	path = submodules/htslib
+	url = https://github.com/samtools/htslib
+[submodule "submodules/bzip2"]
+	path = submodules/bzip2
+	url = https://github.com/libarchive/bzip2
+[submodule "submodules/libsimdpp"]
+	path = submodules/libsimdpp
+	url = https://github.com/p12tic/libsimdpp

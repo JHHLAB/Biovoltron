@@ -1,0 +1,52 @@
+name: deploy
+
+on:
+  push:
+    branches: [ master ]
+
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+    container: jhhlab/biovoltron-ci-env:20230914
+    steps:
+    - uses: actions/checkout@v2
+      with:
+        submodules: recursive
+    - name: Build Biovoltron
+      run: |
+        mkdir build
+        cd build
+        cmake .. -DGCOV=ON -DBIOVOLTRON_DOC=ON
+        make -j
+    - name: Run unit-test
+      run: |
+        cd build
+        ./tests/biovoltron-test
+    - name: Upload Biovoltron document preview
+      uses: actions/upload-artifact@v3
+      with:
+        name: Biovoltron-document
+        path: build/docs/doxygen/html
+
+  deploy:
+    runs-on: ubuntu-20.04
+    needs: build-and-test
+    steps:
+    - uses: actions/checkout@v2
+    - name: Download Biovoltron document preview
+      uses: actions/download-artifact@v3
+      with:
+        name: Biovoltron-document
+        path: build/docs/doxygen/html
+    - name: Deploy preview
+      uses: JamesIves/github-pages-deploy-action@v4
+      with:
+        folder: build/docs/doxygen/html
+        branch: gh-pages
+        clean-exclude: pr-preview
+        token: ${{ github.token }}
