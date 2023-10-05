@@ -1,118 +1,140 @@
-Contribute
-==========
+# Contribute {#contribute}
+
+Welcome to Biovoltron's community! Whether you're interested in reporting a bug, setting up your development environment, or contributing code, this guide will help you get started.
 
 [TOC]
 
-Reporting Bugs
---------------
-1. Check FAQ.
-2. Check opened issues.
-3. Open an issue (make sure the bug is reproducable).
+## Bug Reporting {#contribute-bug-reporting}
+1. Check if the issue you've encountered has already been reported in our [issue tracker](https://github.com/JHHLAB/Biovoltron/issues).
+2. If it hasn't been reported, create a new issue, ensuring that you provide enough details for others to reproduce the bug.
 
-Setup Development Environment
------------------------------
-Dev dependencies:
+## Environment Setup {#contribute-setup}
+### Development Dependencies
+Ensure you have the following dependencies installed:
+- g++ >= 11.1.0
+- boost >= 1.71.0
+- zlib >= 1.2.11
+- cmake >= 3.16
 
-* g++ 11.1.0+
-* boost 1.74.0+
-* zlib 1.2.11+
-* tbb 2020.3+
-* range-v3 0.11.0+
-* cmake 3.16+
-
-```sh
-$ git clone REPO_URL
-$ cd Biovoltron
-$ mkdir build && cd build
-$ cmake ..
-$ make
-$ ./tests/biovoltron-test
-```
-Extra dependencies for coverage report:
-
-* gcovr
-* Make sure your gcov is the same version as your gcc compiler.
-
-```sh
-$ mkdir build && cd build
-$ cmake .. -DGCOV=ON
-$ make
-$ ./tests/biovoltron-test
-$ gcovr --html-details coverage.html --root ../include/biovoltron/ .
-# Open coverage.html in your browser.
+Clone the Biovoltron repository with submodules
+```bash
+git clone --recurse-submodules git@github.com:JHHLAB/Biovoltron.git
+cd Biovoltron
 ```
 
-Extra dependencies for building documentation:
+Install pre-commit for code formatting
+```bash
+pip install pre-commit
+pre-commit install
+```
 
-* doxygen
-* sphinx
-* sphinx_material
-* breathe
+Create a build directory and configure the project
+```bash
+mkdir build && cd build
+cmake .. -DCMAKE_BUILD_TYPE=Debug
+```
+
+Build the project and run tests
+```bash
+make
+./tests/biovoltron-test
+```
+
+### Coverage Report Dependencies
+- gcovr (Ensure your gcov version matches your gcc compiler version.)
+
+Create a build directory for coverage report
+```bash
+mkdir build && cd build
+```
+
+Configure the project for coverage report
+```bash
+cmake .. -DCMAKE_BUILD_TYPE=Debug -DGCOV=ON
+```
+
+Build the project and run tests
+```bash
+make
+./tests/biovoltron-test
+```
+
+Generate coverage report in HTML format
+```bash
+gcovr --html-details coverage.html --root ../include/biovoltron/ .
+```
+
+Open `coverage.html` in your browser.
+
+### Documentation Building Dependencies
+- doxygen >= 1.9.4
+
+Create a build directory for documentation
+```bash
+mkdir build && cd build
+```
+
+Configure the project for documentation generation
+```bash
+cmake .. -DBIOVOLTRON_DOC=ON
+```
+
+Build the project
+```
+make
+```
+
+Open the generated documentation `docs/doxygen/html/index.html` in your browser
+
+## Development Workflow {#contribute-development-workflow}
+- Select an issue to work on.
+- Create a branch and start working on your issue.
+```bash
+git checkout -b YOUR_BRANCH
+```
+- Write unit tests first (tests serve as your specifications).
+- Begin working on your code.
+- Ensure that all tests pass.
+- Document your code using Doxygen.
+- Before merging, clean up your commit history and rebase.
 
 ```bash
-# install Doxygen on your system.
-$ pip install sphinx breathe sphinx-material
-$ mkdir build && cd build
-$ cmake .. -DBIOVOLTRON_DOC=ON
-$ make Sphinx
-# Open doc/sphinx/index.html in your browser.
+git fetch --prune
+git checkout master
+git merge
+git checkout YOUR_BRANCH
+git rebase master
 ```
-
-Development Workflow
---------------------
-* Pick a issue to work on.
-* Create a branch and work on your issue.
-
+Resove conflict if any then git rebase --continue, clean your commit history
 ```bash
-$ git checkout -b YOUR_BRANCH
+git push -f origin YOUR_BRANCH
 ```
 
-* Write unit test first (test is your spec).
-* Start work on you code.
-* Make sure all the test pass.
-* Write doxygen documentation.
-* Before you merge: clean your commit history and rebase.
+- Submit a merge request (delete the source branch when merged).
+- Get your code merged or make necessary fixes.
 
-```bash
-$ git fetch --prune
-$ git checkout master
-$ git merge
-$ git checkout YOUR_BRANCH
-$ git rebase master
-# Resove conflict if any then git rebase --continue
-# Clean your commit history
-$ git push -f origin YOUR_BRANCH
-```
+## C++ Coding Guidelines {#contribute-coding-guideline}
+- Use "Almost Always Auto" (AAA) for type inference.
+- Prefer using the Standard Template Library (STL) over complex nested raw loops.
+- Declare member functions of stateless classes/structs as static.
+- Utilize const whenever possible.
+- Use move semantics instead of copying.
 
-* Submit a merge request (delete source branch when merged).
-* Get merged or need some fix.
-
-C++ Coding Guidelines
----------------------
-* AAA: Almost Always Auto.
-* Use STL instead of complex nested raw loop.
-* Stateless class/struct member function declare ``static``.
-* Use ``const`` as much as possible.
-* Move instead of copy.
-
-Git style
----------
-
+## Git style {#contribute-git-style}
 ### Commit Message
-Commit message can be break into three part
+A commit message should be divided into three parts:
 
-* Commit message token
-  * ``[FEAT]`` Whenever you implement something new and shiny.
-  * ``[FIX]`` Whenever you fix some wrong code in the source.
-  * ``[DOC]`` Whenever you do something only(!) related to the documentation.
-  * ``[INFRA]``   Whenever you change something of the build system or CI related.
-  * ``[TEST]`` Whenever you do something related to the tests (unit or benchmark).
-  * ``[MISC]`` Whenever it does not fit to any of the above.
-* Short description: less than 50 characters.
-* Detail description (optional): less than 72 character per line.
+- Commit message token:
+  - ``[FEAT]`` for implementing new features.
+  - ``[FIX]`` for fixing issues or bugs in the source code.
+  - ``[DOC]`` for documentation-related changes.
+  - ``[INFRA]`` for changes to the build system or CI.
+  - ``[TEST]`` for modifications related to tests (unit or benchmark).
+  - ``[MISC]`` for changes that do not fit into any of the above categories.
+- Short description: A summary of fewer than 50 characters.
+- Detailed description (optional): Detailed explanation, with each line limited to 72 characters.
 
-An example
-
+Here's an example:
 ```
 [FIX] Short (50 chars or fewer) summary of changes
 
@@ -140,18 +162,17 @@ Source http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html
 ```
 
 ### Other Git Guidelines
-1. Rebase before merge.
-2. Merge small and often.
-3. Squash your commits into one before merge.
-4. Do not work on same branch.
+1. Rebase before merging.
+2. Merge small changes frequently.
+3. Squash your commits into one before merging.
+4. Avoid working on the same branch simultaneously.
 
-Doxygen Comment Guide
----------------------
-1. ``class``/``struct``: Provide a brief description.
-2. Public interface (members, member functions) must have documentation.
-3. Description must be concise (short and clear).
+## Doxygen Comment Guidelines {#contribute-doxygen}
+1. For ``class`` and ``struct``, provide a brief description.
+2. All public interfaces (members and member functions) should have documentation.
+3. Keep descriptions concise (short and clear).
 
-An example
+Here's an example:
 \code{.unparsed}
 ```cpp
 /**
@@ -191,3 +212,5 @@ Class Foo {
 };
 ```
 \endcode
+
+Feel free to reach out if you have any questions or need further guidance on contributing to Biovoltron!

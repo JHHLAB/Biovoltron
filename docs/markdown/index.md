@@ -2,19 +2,18 @@
 
 [TOC]
 
-Welcome to Biovoltron, a modern C++ library for bioinformatics tasks and data analysis.
-
-Drawing inspiration from the iconic Voltron, Biovoltron embraces the concept of modularity, allowing you to assemble and utilize different "modules" within the library to create a variety of applications for your bioinformatics needs.
+Welcome to Biovoltron: A modern C++ library for bioinformatics tasks and data analysis. Drawing inspiration from the iconic Voltron, Biovoltron embraces the concept of modularity, allowing you to assemble and utilize different "modules" within the library to create a variety of applications for your bioinformatics needs.
 
 ## Introducing Biovoltron
 
-Biovoltron is an open-source C++ library designed to simplify and accelerate bioinformatics tasks. It provides a comprehensive set of functionalities, data structures, and algorithms to work with biological data, from sequence analysis to structural biology, and everything in between. Biovoltron is developed with a focus on performance, usability, and extensibility, making it a valuable asset for researchers, developers, and educators in the bioinformatics community.
+Biovoltron is an open-source C++ library designed to simplify and accelerate bioinformatics tasks. It provides a comprehensive set of functionalities, data structures, and algorithms to work with biological data. Biovoltron is developed with a focus on performance, usability, and extensibility, making it a valuable asset for researchers, developers, and educators in the bioinformatics community.
 
 ## Key Features
-- **Efficiency**: Biovoltron is built with performance in mind, utilizing modern C++ features and optimization techniques to ensure your bioinformatics analyses run smoothly and quickly.
-- **Versatility**: Like the modular components of Voltron, Biovoltron offers a wide range of tools and algorithms as independent "modules." You can mix and match these modules to create customized bioinformatics applications tailored to your specific needs.
-- **Ease of Use**: We provide user-friendly interfaces and extensive documentation to make it easy for you to assemble and make the most of Biovoltron's modular capabilities.
-- **Open Source**: Biovoltron is an open-source project, inviting contributions from the community to enhance its functionality and robustness.
+- 🚀 Efficiency: Biovoltron prioritizes performance by leveraging modern C++ features and optimization techniques to ensure your bioinformatics analyses run smoothly and quickly.
+- 🧩 Versatility: Like the modular components of Voltron, Biovoltron offers a wide range of tools and algorithms as independent "modules." You can mix and match these modules to create customized bioinformatics applications tailored to your specific needs with ease.
+- 🔄 Flexibility: Biovoltron enhances flexibility by utilizing C++ pipes, simplifying code and streamlining your bioinformatics workflows.
+- 🎯 Ease of Use: We provide user-friendly interfaces and extensive documentation to make it straightforward for you to assemble and harness the full potential of Biovoltron's modular capabilities.
+- 🌐 Open Source: Biovoltron is an open-source project, inviting contributions from the community to enhance its functionality and robustness.
 
 ## Biovoltron at a Glance
 Biovoltron is a modern C++ bioinformatics library designed to provide a seamless and modular experience for working with biological data. Below, we highlight key features and showcase code snippets to demonstrate its capabilities in some bioinformatics tasks.
@@ -110,7 +109,7 @@ To get started with Biovoltron and experience the modular power it offers, follo
 
 1. **[Installation](installation.md)**: We recommend that you use CMake to build your project. Check out our [Installation Guide](installation.md) for detailed instructions.
 2. **[Tutorials](tutorials/index.md)**: Dive into our step-by-step [Tutorials](tutorials/index.md) to learn how to assemble and use Biovoltron modules for various bioinformatics tasks.
-3. **Documentation**: The API Documentation provides detailed information about Biovoltron's modules, classes, and functions. It's your reference guide to making the most of the modular library.
+3. **[Documentation](modules.html)**: The [API Documentation](modules.html) provides detailed information about Biovoltron's modules, classes, and functions. It's your reference guide to making the most of the modular library.
 4. **[Contribute](contribute.md)**: If you're passionate about bioinformatics and C++, consider contributing to Biovoltron. Check our [Contribution Guide](contribute.md) to get started.
 
 ## Community and Support
