@@ -4,6 +4,7 @@ concurrency: preview-${{ github.ref }}
 
 permissions:
   pull-requests: write
+  contents: write
 
 on:
   pull_request:
