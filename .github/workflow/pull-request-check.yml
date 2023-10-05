@@ -1,0 +1,52 @@
+name: pull-request-check
+
+concurrency: preview-${{ github.ref }}
+
+permissions:
+  pull-requests: write
+
+on:
+  pull_request:
+    branches: [ master ]
+
+  workflow_dispatch:
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+    container: jhhlab/biovoltron-ci-env:20230914
+    steps:
+    - uses: actions/checkout@v2
+      with:
+        submodules: recursive
+    - name: Build Biovoltron
+      run: |
+        mkdir build
+        cd build
+        cmake .. -DGCOV=ON -DBIOVOLTRON_DOC=ON
+        make -j
+    - name: Run unit-test
+      run: |
+        cd build
+        ./tests/biovoltron-test
+    - name: Upload Biovoltron document preview
+      uses: actions/upload-artifact@v3
+      with:
+        name: Biovoltron-document
+        path: build/doc/doxygen/html
+
+  deploy-preview:
+    runs-on: ubuntu-20.04
+    needs: build-and-test
+    steps:
+    - uses: actions/checkout@v2
+    - name: Download Biovoltron document preview
+      uses: actions/download-artifact@v3
+      with:
+        name: Biovoltron-document
+        path: build/doc/doxygen/html
+    - name: Deploy preview
+      uses: rossjrw/pr-preview-action@v1
+      with:
+        source-dir: build/doc/doxygen/html
+        token: ${{ secrets.PAT_TOKEN }}
