@@ -31,7 +31,7 @@ jobs:
         ./tests/biovoltron-test
     - name: Debug document
       run: |
-        tree .
+        ls -R
     - name: Upload Biovoltron document preview
       uses: actions/upload-artifact@v3
       with:
