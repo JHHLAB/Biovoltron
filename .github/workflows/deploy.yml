@@ -28,7 +28,7 @@ jobs:
       uses: actions/upload-artifact@v3
       with:
         name: Biovoltron-document
-        path: build/doc/doxygen/html
+        path: build/docs/doxygen/html
 
   deploy:
     runs-on: ubuntu-20.04
@@ -39,11 +39,11 @@ jobs:
       uses: actions/download-artifact@v3
       with:
         name: Biovoltron-document
-        path: build/doc/doxygen/html
+        path: build/docs/doxygen/html
     - name: Deploy preview
       uses: JamesIves/github-pages-deploy-action@v4
       with:
-        folder: build/doc/doxygen/html
+        folder: build/docs/doxygen/html
         branch: gh-pages
         clean-exclude: pr-preview
         token: ${{ github.token }}
