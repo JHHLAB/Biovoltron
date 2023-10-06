@@ -225,7 +225,7 @@ template&lt;bool Encoded = false&gt; </div>
 <p>This operator allows the implicit conversion of a <a class="el" href="structbiovoltron_1_1FastqRecord.html" title="Manages data from FASTQ files, including sequences and quality scores, for easy parsing and manipulat...">FastqRecord</a> with one encoding (either integer or string) to a <a class="el" href="structbiovoltron_1_1FastqRecord.html" title="Manages data from FASTQ files, including sequences and quality scores, for easy parsing and manipulat...">FastqRecord</a> with the opposite encoding. For example, if you have an existing <a class="el" href="structbiovoltron_1_1FastqRecord.html" title="Manages data from FASTQ files, including sequences and quality scores, for easy parsing and manipulat...">FastqRecord</a> 'a' encoded as a string, and you want to change its encoding to integer (or vice versa), you can use this operator to perform the conversion.</p>
 <p>Example usage: </p><div class="fragment"><div class="line">FastqRecord&lt;false&gt; a;     <span class="comment">// &#39;a&#39; is encoded as a std::string.</span></div>
 <div class="line">FastqRecord&lt;true&gt; b = a;  <span class="comment">// &#39;b&#39; is encoded as biovoltron::istring (using</span></div>
-<div class="line">implicit conversion).</div>
+<div class="line">                          <span class="comment">// implicit conversion).</span></div>
 </div><!-- fragment --><dl class="section return"><dt>Returns</dt><dd>A <a class="el" href="structbiovoltron_1_1FastqRecord.html" title="Manages data from FASTQ files, including sequences and quality scores, for easy parsing and manipulat...">FastqRecord</a> with the opposite encoding (integer or string). </dd></dl>
 
 </div>

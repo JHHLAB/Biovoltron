@@ -198,9 +198,9 @@ template&lt;bool Encoded = false&gt; </div>
 
 <p>Implicit conversion operator (converted to <a class="el" href="structbiovoltron_1_1FastaRecord.html" title="Stores data from FASTA files, facilitating the parsing and manipulation of nucleotide sequences.">FastaRecord</a>&lt;!Encoded&gt;) </p>
 <ul>
-<li>If you have existing <a class="el" href="structbiovoltron_1_1FastaRecord.html" title="Stores data from FASTA files, facilitating the parsing and manipulation of nucleotide sequences.">FastaRecord</a> (or <a class="el" href="structbiovoltron_1_1FastqRecord.html" title="Manages data from FASTQ files, including sequences and quality scores, for easy parsing and manipulat...">FastqRecord</a>) object a = <a class="el" href="structbiovoltron_1_1FastaRecord.html">FastaRecord&lt;false&gt;</a>, and you want to change a's encoding from std::string to biovoltron::istring, this operator allows you to implicitly convert you object to the !Encoded version. Example <div class="fragment"><div class="line"> FastaRecord&lt;false&gt; a;     <span class="comment">// a is encoded by std::string</span></div>
-<div class="line"> FastaRecord&lt;true&gt; b = a;  <span class="comment">// b is encoded by biovoltron::istring (using</span></div>
-<div class="line">implicit conversion)</div>
+<li>If you have existing <a class="el" href="structbiovoltron_1_1FastaRecord.html" title="Stores data from FASTA files, facilitating the parsing and manipulation of nucleotide sequences.">FastaRecord</a> (or <a class="el" href="structbiovoltron_1_1FastqRecord.html" title="Manages data from FASTQ files, including sequences and quality scores, for easy parsing and manipulat...">FastqRecord</a>) object a = <a class="el" href="structbiovoltron_1_1FastaRecord.html">FastaRecord&lt;false&gt;</a>, and you want to change a's encoding from std::string to biovoltron::istring, this operator allows you to implicitly convert you object to the !Encoded version. Example <div class="fragment"><div class="line">FastaRecord&lt;false&gt; a;     <span class="comment">// a is encoded by std::string</span></div>
+<div class="line">FastaRecord&lt;true&gt; b = a;  <span class="comment">// b is encoded by biovoltron::istring (using</span></div>
+<div class="line">                          <span class="comment">// implicit conversion)</span></div>
 </div><!-- fragment --> </li>
 </ul>
 

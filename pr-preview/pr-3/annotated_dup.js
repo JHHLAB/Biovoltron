@@ -1,4 +1,4 @@
-var annotated =
+var annotated_dup =
 [
     [ "biovoltron", null, [
       [ "Header", "structbiovoltron_1_1Header.html", "structbiovoltron_1_1Header" ],
