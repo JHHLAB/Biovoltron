@@ -185,15 +185,17 @@ Writing the main.cpp File</h2>
 <div class="line"><span class="stringliteral">ACTG)&quot;;</span></div>
 <div class="line"><span class="stringliteral"></span> </div>
 <div class="line"><span class="stringliteral"></span><span class="keywordtype">int</span> main() {</div>
-<div class="line">  <span class="keyword">auto</span> rec = biovoltron::FastaRecord&lt;true&gt;{};</div>
+<div class="line">  <span class="keyword">auto</span> rec = <a class="code" href="structbiovoltron_1_1FastaRecord.html">biovoltron::FastaRecord&lt;true&gt;</a>{};</div>
 <div class="line">  std::istringstream(fasta) &gt;&gt; rec;</div>
 <div class="line"> </div>
 <div class="line">  <span class="comment">// Print the name and sequence</span></div>
-<div class="line">  std::cout &lt;&lt; rec.name &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
+<div class="line">  std::cout &lt;&lt; rec.<a class="code" href="structbiovoltron_1_1FastaRecord.html#ad6cad4e0e9c48a135bc17cb1f28218f6">name</a> &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
 <div class="line">  std::cout &lt;&lt; rec.seq &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
 <div class="line"> </div>
 <div class="line">  <span class="keywordflow">return</span> 0;</div>
 <div class="line">}</div>
+<div class="ttc" id="astructbiovoltron_1_1FastaRecord_html"><div class="ttname"><a href="structbiovoltron_1_1FastaRecord.html">biovoltron::FastaRecord</a></div><div class="ttdoc">Stores data from FASTA files, facilitating the parsing and manipulation of nucleotide sequences.</div><div class="ttdef"><b>Definition:</b> fasta.hpp:13</div></div>
+<div class="ttc" id="astructbiovoltron_1_1FastaRecord_html_ad6cad4e0e9c48a135bc17cb1f28218f6"><div class="ttname"><a href="structbiovoltron_1_1FastaRecord.html#ad6cad4e0e9c48a135bc17cb1f28218f6">biovoltron::FastaRecord::name</a></div><div class="ttdeci">std::string name</div><div class="ttdoc">Name of reference genome (or reads in FastqRecord)</div><div class="ttdef"><b>Definition:</b> fasta.hpp:35</div></div>
 </div><!-- fragment --><h2><a class="anchor" id="autotoc_md15"></a>
 Configuring CMake</h2>
 <p>To build your C++ program with Biovoltron, create a <code>CMakeLists.txt</code> file: </p><div class="fragment"><div class="line">cmake_minimum_required (VERSION 3.16)</div>

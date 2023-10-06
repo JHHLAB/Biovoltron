@@ -44,4 +44,5 @@ var menudata={children:[
 {text:"Development Workflow",url:"contribute.html#contribute-development-workflow"},
 {text:"C++ Coding Guidelines",url:"contribute.html#contribute-coding-guideline"},
 {text:"Git style",url:"contribute.html#contribute-git-style"},
-{text:"Doxygen Comment Guidelines",url:"contribute.html#contribute-doxygen"}]}]}
+{text:"Doxygen Comment Guidelines",url:"contribute.html#contribute-doxygen"}]},
+{text:"API Documentation",url:"modules.html"}]}

@@ -129,17 +129,18 @@ $(document).ready(function(){initNavTree('tutorials-fileio-fasta.html',''); init
 </ul>
 </div>
 <div class="textblock"><p><a class="anchor" id="md_docs_markdown_tutorials_file_io_fasta"></a></p>
-<p>In this tutorial, we will explore how to effectively use biovoltron::FastaRecord from the File Input/Output module of Biovoltron. FastaRecord is designed to store and manipulate data from FASTA files, making it easier to work with nucleotide or protein sequences.</p>
+<p>In this tutorial, we will explore how to effectively use <a class="el" href="structbiovoltron_1_1FastaRecord.html" title="Stores data from FASTA files, facilitating the parsing and manipulation of nucleotide sequences.">biovoltron::FastaRecord</a> from the File Input/Output module of Biovoltron. FastaRecord is designed to store and manipulate data from FASTA files, making it easier to work with nucleotide or protein sequences.</p>
 <h1><a class="anchor" id="autotoc_md17"></a>
 Step 1. Include the Necessary Headers</h1>
 <p>First, you need to include the appropriate header file for FastaRecord: </p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;biovoltron/file_io/fasta.hpp&gt;</span></div>
 </div><!-- fragment --><h1><a class="anchor" id="autotoc_md18"></a>
 Step 2. Creating a FastaRecord Object</h1>
-<p>You can create a biovoltron::FastaRecord object as follows: </p><div class="fragment"><div class="line">biovoltron::FastaRecord&lt;false&gt; fastaRecord;</div>
-</div><!-- fragment --><p> Here, we've created a default biovoltron::FastaRecord object.</p>
+<p>You can create a <a class="el" href="structbiovoltron_1_1FastaRecord.html" title="Stores data from FASTA files, facilitating the parsing and manipulation of nucleotide sequences.">biovoltron::FastaRecord</a> object as follows: </p><div class="fragment"><div class="line"><a class="code" href="structbiovoltron_1_1FastaRecord.html">biovoltron::FastaRecord&lt;false&gt;</a> fastaRecord;</div>
+<div class="ttc" id="astructbiovoltron_1_1FastaRecord_html"><div class="ttname"><a href="structbiovoltron_1_1FastaRecord.html">biovoltron::FastaRecord&lt; false &gt;</a></div></div>
+</div><!-- fragment --><p> Here, we've created a default <a class="el" href="structbiovoltron_1_1FastaRecord.html" title="Stores data from FASTA files, facilitating the parsing and manipulation of nucleotide sequences.">biovoltron::FastaRecord</a> object.</p>
 <h1><a class="anchor" id="autotoc_md19"></a>
 Step 3. Reading Data from a FASTA File</h1>
-<p>Now, let's read data from a FASTA file into our biovoltron::FastaRecord object. You'll need an input file stream (<code>ifstream</code>) and the name of the FASTA file you want to read. Here's how to do it: </p><div class="fragment"><div class="line"><span class="comment">// Open a FASTA file for reading</span></div>
+<p>Now, let's read data from a FASTA file into our <a class="el" href="structbiovoltron_1_1FastaRecord.html" title="Stores data from FASTA files, facilitating the parsing and manipulation of nucleotide sequences.">biovoltron::FastaRecord</a> object. You'll need an input file stream (<code>ifstream</code>) and the name of the FASTA file you want to read. Here's how to do it: </p><div class="fragment"><div class="line"><span class="comment">// Open a FASTA file for reading</span></div>
 <div class="line"><span class="keyword">auto</span> fa = std::ifstream{<span class="stringliteral">&quot;hs37d5.fa&quot;</span>};</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// Create a range view of FASTA records</span></div>

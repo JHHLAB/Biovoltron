@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['tutorials_2',['Tutorials',['../tutorials.html',1,'']]]
+  ['delim_3',['DELIM',['../structbiovoltron_1_1FastqRecord.html#a9272ce22329488e63dd7ef9c24038734',1,'biovoltron::FastqRecord']]]
 ];

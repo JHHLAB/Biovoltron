@@ -25,18 +25,7 @@
 var NAVTREE =
 [
   [ "Biovoltron", "index.html", [
-    [ "Welcome", "index.html", [
-      [ "Introducing Biovoltron", "index.html#autotoc_md5", null ],
-      [ "Key Features", "index.html#autotoc_md6", null ],
-      [ "Biovoltron at a Glance", "index.html#autotoc_md7", [
-        [ "File Input and Output", "index.html#autotoc_md8", null ],
-        [ "Align and Variant Calling", "index.html#autotoc_md9", null ],
-        [ "Adaptor Trimming", "index.html#autotoc_md10", null ]
-      ] ],
-      [ "Getting Started", "index.html#autotoc_md11", null ],
-      [ "Community and Support", "index.html#autotoc_md12", null ],
-      [ "License", "index.html#autotoc_md13", null ]
-    ] ],
+    [ "Welcome", "index.html", null ],
     [ "Installation", "installation.html", [
       [ "Requirements", "installation.html#installation-requirements", null ],
       [ "Setting Up Your Project", "installation.html#installation-setup-project", null ],
@@ -61,7 +50,8 @@ var NAVTREE =
       [ "C++ Coding Guidelines", "contribute.html#contribute-coding-guideline", null ],
       [ "Git style", "contribute.html#contribute-git-style", null ],
       [ "Doxygen Comment Guidelines", "contribute.html#contribute-doxygen", null ]
-    ] ]
+    ] ],
+    [ "API Documentation", "modules.html", "modules" ]
   ] ]
 ];
 
