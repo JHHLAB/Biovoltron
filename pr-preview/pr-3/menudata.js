@@ -45,7 +45,4 @@ var menudata={children:[
 {text:"C++ Coding Guidelines",url:"contribute.html#contribute-coding-guideline"},
 {text:"Git style",url:"contribute.html#contribute-git-style"},
 {text:"Doxygen Comment Guidelines",url:"contribute.html#contribute-doxygen"}]},
-{text:"Classes",url:"annotated.html",children:[
-{text:"Class List",url:"annotated.html"},
-{text:"Class Index",url:"classes.html"}]},
-{text:"Modules",url:"modules.html"}]}
+{text:"API Documentation",url:"modules.html"}]}

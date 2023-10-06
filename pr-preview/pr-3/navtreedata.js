@@ -51,17 +51,13 @@ var NAVTREE =
       [ "Git style", "contribute.html#contribute-git-style", null ],
       [ "Doxygen Comment Guidelines", "contribute.html#contribute-doxygen", null ]
     ] ],
-    [ "Classes", "annotated.html", [
-      [ "Class List", "annotated.html", "annotated_dup" ],
-      [ "Class Index", "classes.html", null ]
-    ] ],
-    [ "Modules", "modules.html", "modules" ]
+    [ "API Documentation", "modules.html", "modules" ]
   ] ]
 ];
 
 var NAVTREEINDEX =
 [
-"annotated.html"
+"contribute.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
