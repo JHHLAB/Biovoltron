@@ -61,7 +61,7 @@ template <bool Encoded = false> struct FastqRecord : FastaRecord<Encoded> {
    * ```cpp
    * FastqRecord<false> a;     // 'a' is encoded as a std::string.
    * FastqRecord<true> b = a;  // 'b' is encoded as biovoltron::istring (using
-   * implicit conversion).
+   *                           // implicit conversion).
    * ```
    *
    * @return A FastqRecord with the opposite encoding (integer or string).

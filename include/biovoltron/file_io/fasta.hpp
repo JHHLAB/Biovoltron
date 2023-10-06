@@ -51,7 +51,7 @@ template <bool Encoded = false> struct FastaRecord {
    * ```cpp
    *  FastaRecord<false> a;     // a is encoded by std::string
    *  FastaRecord<true> b = a;  // b is encoded by biovoltron::istring (using
-   * implicit conversion)
+   *                            // implicit conversion)
    * ```
    */
   operator auto() const {
