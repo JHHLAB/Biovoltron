@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['delim_56',['DELIM',['../structbiovoltron_1_1FastqRecord.html#a9272ce22329488e63dd7ef9c24038734',1,'biovoltron::FastqRecord']]]
+  ['delim_69',['DELIM',['../structbiovoltron_1_1FastqRecord.html#a9272ce22329488e63dd7ef9c24038734',1,'biovoltron::FastqRecord']]]
 ];

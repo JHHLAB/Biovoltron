@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['stablesorter_45',['StableSorter',['../structbiovoltron_1_1StableSorter.html',1,'biovoltron']]]
+  ['stablesorter_53',['StableSorter',['../structbiovoltron_1_1StableSorter.html',1,'biovoltron']]]
 ];
