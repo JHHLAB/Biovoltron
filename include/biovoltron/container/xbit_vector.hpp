@@ -303,10 +303,6 @@ protected:
   }
 };
 
-/**
- * @ingroup container
- * @brief TBA
- */
 template <std::size_t N, std::unsigned_integral Block,
           std::copy_constructible Allocator>
   requires(!std::same_as<Block, bool>)
