@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['is_5fvalid_40',['is_valid',['../structbiovoltron_1_1Codec.html#af2f8e2bc2a7485a4f1c63b388696a49c',1,'biovoltron::Codec']]]
+  ['hash_47',['hash',['../structbiovoltron_1_1Codec.html#a9e653b1ad08f987e0219ecc12f717467',1,'biovoltron::Codec']]]
 ];

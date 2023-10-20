@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['name_14',['name',['../structbiovoltron_1_1FastaRecord.html#ad6cad4e0e9c48a135bc17cb1f28218f6',1,'biovoltron::FastaRecord']]]
+  ['installation_14',['Installation',['../installation.html',1,'']]],
+  ['is_5fvalid_15',['is_valid',['../structbiovoltron_1_1Codec.html#af2f8e2bc2a7485a4f1c63b388696a49c',1,'biovoltron::Codec']]]
 ];

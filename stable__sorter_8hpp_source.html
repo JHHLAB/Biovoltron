@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Biovoltron: API Documentation</title>
+<title>Biovoltron: include/biovoltron/algo/suffix_sorter/stable_sorter.hpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -99,7 +99,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-$(document).ready(function(){initNavTree('modules.html',''); initResizable(); });
+$(document).ready(function(){initNavTree('stable__sorter_8hpp_source.html',''); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -119,22 +119,45 @@ $(document).ready(function(){initNavTree('modules.html',''); initResizable(); })
 
 <div class="header">
   <div class="headertitle">
-<div class="title">API Documentation</div>  </div>
+<div class="title">stable_sorter.hpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock">Here is a list of all modules:</div><div class="directory">
-<div class="levels">[detail level <span onclick="javascript:toggleLevel(1);">1</span><span onclick="javascript:toggleLevel(2);">2</span>]</div><table class="directory">
-<tr id="row_0_" class="even"><td class="entry"><span style="width:0px;display:inline-block;">&#160;</span><span id="arr_0_" class="arrow" onclick="toggleFolder('0_')">&#9660;</span><a class="el" href="group__algo.html" target="_self">algo</a></td><td class="desc">The "algo" module provides a collection of string algorithms and data structures tailored for bioinformatics applications </td></tr>
-<tr id="row_0_0_"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><a class="el" href="group__suffix__sorter.html" target="_self">suffix_sorter</a></td><td class="desc">The "suffix_sorter" module offers a versatile set of algorithms for efficient sorting and manipulation of suffix arrays </td></tr>
-<tr id="row_1_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a class="el" href="group__file__io.html" target="_self">file_io</a></td><td class="desc">Handles bioinformatics file formats, simplifying data parsing and manipulation for sequences, alignments, and variants </td></tr>
-<tr id="row_2_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a class="el" href="group__utility.html" target="_self">utility</a></td><td class="desc">Provides fundamental tools for working with DNA sequences and related data </td></tr>
-</table>
-</div><!-- directory -->
-</div><!-- contents -->
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;biovoltron/algo/suffix_sorter/core/suffix_sorter.hpp&gt;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;biovoltron/utility/istring.hpp&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;execution&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">namespace </span>biovoltron {</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">template</span> &lt;std::integral size_type_t = std::uint32_t,</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;          std::size_t sort_len_t = istring_view::npos&gt;</div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="structbiovoltron_1_1StableSorter.html">   21</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structbiovoltron_1_1StableSorter.html">StableSorter</a> {</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;  <span class="keyword">using</span> size_type = size_type_t;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="structbiovoltron_1_1StableSorter.html#aa4be345ceef96266d191b9e83b89894d">   27</a></span>&#160;  <span class="keyword">static</span> constexpr std::size_t <a class="code" href="structbiovoltron_1_1StableSorter.html#aa4be345ceef96266d191b9e83b89894d">sort_len</a> = sort_len_t;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="structbiovoltron_1_1StableSorter.html#a46ab69d70ca611c67843de421b34572c">   35</a></span>&#160;  <span class="keyword">static</span> <span class="keyword">auto</span> <a class="code" href="structbiovoltron_1_1StableSorter.html#a46ab69d70ca611c67843de421b34572c">get_sa</a>(istring_view ref) {</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keyword">auto</span> sa = std::vector&lt;size_type&gt;(ref.size() + 1);</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    std::iota(sa.begin(), sa.end(), 0);</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    std::stable_sort(std::execution::par_unseq, sa.begin(), sa.end(),</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;                     [ref](<span class="keyword">auto</span> i, <span class="keyword">auto</span> j) {</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;                       return ref.substr(i, sort_len) &lt; ref.substr(j, sort_len);</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;                     });</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordflow">return</span> sa;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  }</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;};</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;} <span class="comment">// namespace biovoltron</span></div>
+<div class="ttc" id="astructbiovoltron_1_1StableSorter_html"><div class="ttname"><a href="structbiovoltron_1_1StableSorter.html">biovoltron::StableSorter</a></div><div class="ttdoc">A stable sorter for suffix arrays.</div><div class="ttdef"><b>Definition:</b> stable_sorter.hpp:21</div></div>
+<div class="ttc" id="astructbiovoltron_1_1StableSorter_html_a46ab69d70ca611c67843de421b34572c"><div class="ttname"><a href="structbiovoltron_1_1StableSorter.html#a46ab69d70ca611c67843de421b34572c">biovoltron::StableSorter::get_sa</a></div><div class="ttdeci">static auto get_sa(istring_view ref)</div><div class="ttdef"><b>Definition:</b> stable_sorter.hpp:35</div></div>
+<div class="ttc" id="astructbiovoltron_1_1StableSorter_html_aa4be345ceef96266d191b9e83b89894d"><div class="ttname"><a href="structbiovoltron_1_1StableSorter.html#aa4be345ceef96266d191b9e83b89894d">biovoltron::StableSorter::sort_len</a></div><div class="ttdeci">static constexpr std::size_t sort_len</div><div class="ttdoc">The length for sorting.</div><div class="ttdef"><b>Definition:</b> stable_sorter.hpp:27</div></div>
+</div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
+    <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_0b651c49964504c32b87e0ef520309b5.html">biovoltron</a></li><li class="navelem"><a class="el" href="dir_f4ec3cbfac9753597f54d2df36de2346.html">algo</a></li><li class="navelem"><a class="el" href="dir_2d2d9b9415cf7b76879b6457574ebfb6.html">suffix_sorter</a></li><li class="navelem"><b>stable_sorter.hpp</b></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>

@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['seq_20',['seq',['../structbiovoltron_1_1FastaRecord.html#acf2684a999d11e2bb520b78a842ff769',1,'biovoltron::FastaRecord']]],
-  ['start_5fsymbol_21',['START_SYMBOL',['../structbiovoltron_1_1FastaRecord.html#a3614540af36904a2032b59c27e7cf074',1,'biovoltron::FastaRecord::START_SYMBOL()'],['../structbiovoltron_1_1FastqRecord.html#af269696b0fff2947b12385f3a329c694',1,'biovoltron::FastqRecord::START_SYMBOL()']]]
+  ['record_19',['Record',['../structbiovoltron_1_1Record.html',1,'biovoltron']]],
+  ['rev_5fcomp_20',['rev_comp',['../structbiovoltron_1_1Codec.html#a34267e306cec79098879b595e2ec103c',1,'biovoltron::Codec::rev_comp(istring_view seq)'],['../structbiovoltron_1_1Codec.html#aa3fbb1ac8c1ffa307b7a3a63434bb43b',1,'biovoltron::Codec::rev_comp(std::string_view seq)']]],
+  ['rhash_21',['rhash',['../structbiovoltron_1_1Codec.html#a116259ff4c30b850396e8922e1f93cc4',1,'biovoltron::Codec']]]
 ];

@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Biovoltron: API Documentation</title>
+<title>Biovoltron: suffix_sorter</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -99,7 +99,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-$(document).ready(function(){initNavTree('modules.html',''); initResizable(); });
+$(document).ready(function(){initNavTree('group__suffix__sorter.html',''); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -118,18 +118,70 @@ $(document).ready(function(){initNavTree('modules.html',''); initResizable(); })
 </div>
 
 <div class="header">
+  <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
-<div class="title">API Documentation</div>  </div>
+<div class="title">suffix_sorter<div class="ingroups"><a class="el" href="group__algo.html">algo</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock">Here is a list of all modules:</div><div class="directory">
-<div class="levels">[detail level <span onclick="javascript:toggleLevel(1);">1</span><span onclick="javascript:toggleLevel(2);">2</span>]</div><table class="directory">
-<tr id="row_0_" class="even"><td class="entry"><span style="width:0px;display:inline-block;">&#160;</span><span id="arr_0_" class="arrow" onclick="toggleFolder('0_')">&#9660;</span><a class="el" href="group__algo.html" target="_self">algo</a></td><td class="desc">The "algo" module provides a collection of string algorithms and data structures tailored for bioinformatics applications </td></tr>
-<tr id="row_0_0_"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><a class="el" href="group__suffix__sorter.html" target="_self">suffix_sorter</a></td><td class="desc">The "suffix_sorter" module offers a versatile set of algorithms for efficient sorting and manipulation of suffix arrays </td></tr>
-<tr id="row_1_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a class="el" href="group__file__io.html" target="_self">file_io</a></td><td class="desc">Handles bioinformatics file formats, simplifying data parsing and manipulation for sequences, alignments, and variants </td></tr>
-<tr id="row_2_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a class="el" href="group__utility.html" target="_self">utility</a></td><td class="desc">Provides fundamental tools for working with DNA sequences and related data </td></tr>
+
+<p>The "suffix_sorter" module offers a versatile set of algorithms for efficient sorting and manipulation of suffix arrays.  
+<a href="#details">More...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbiovoltron_1_1StableSorter.html">biovoltron::StableSorter&lt; size_type_t, sort_len_t &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A stable sorter for suffix arrays.  <a href="structbiovoltron_1_1StableSorter.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:gabed3c34cb48dcda6871af3ffd41d5c78"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:gabed3c34cb48dcda6871af3ffd41d5c78"><td class="memTemplItemLeft" align="right" valign="top">concept&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__suffix__sorter.html#gabed3c34cb48dcda6871af3ffd41d5c78">biovoltron::SuffixSorter</a></td></tr>
+<tr class="memdesc:gabed3c34cb48dcda6871af3ffd41d5c78"><td class="mdescLeft">&#160;</td><td class="mdescRight">Concept for Suffix Sorter.  <a href="group__suffix__sorter.html#gabed3c34cb48dcda6871af3ffd41d5c78">More...</a><br /></td></tr>
+<tr class="separator:gabed3c34cb48dcda6871af3ffd41d5c78"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-</div><!-- directory -->
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<p>The "suffix_sorter" module offers a versatile set of algorithms for efficient sorting and manipulation of suffix arrays. </p>
+<p>The "suffix_sorter" module provides a comprehensive suite of algorithms and techniques for sorting and managing suffix arrays, a fundamental data structure used in various bioinformatics and string processing applications. It offers several key features:</p>
+<ul>
+<li>Complete Suffix Array Sorting: Implementations of full suffix array sorting using algorithms such as "psais" and "stable-sort" for accurate and complete sorting of all suffixes.</li>
+<li>K-Ordered Suffix Sorting: The module includes algorithms for k-ordered suffix sorting, where only the first k characters of each suffix are considered for sorting. This is particularly useful in applications where partial suffix ordering is sufficient.</li>
+<li>Parallelization: Many of the sorting algorithms are designed to take advantage of parallel processing, enabling fast and efficient sorting of large datasets.</li>
+</ul>
+<p>These features make the "suffix_sorter" module a valuable toolbox for researchers and practitioners in bioinformatics and string processing, facilitating various sequence analysis tasks and data manipulation needs. </p>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="gabed3c34cb48dcda6871af3ffd41d5c78"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gabed3c34cb48dcda6871af3ffd41d5c78">&#9670;&nbsp;</a></span>SuffixSorter</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">concept biovoltron::SuffixSorter</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">= requires(T t, istring_view ref) {</div>
+<div class="line">  std::is_integral_v&lt;typename T::size_type&gt;;</div>
+<div class="line">  T::sort_len;</div>
+<div class="line">  t.get_sa(ref);</div>
+<div class="line">}</div>
+</div><!-- fragment -->
+<p>Concept for Suffix Sorter. </p>
+<p>This concept defines the requirements for a Suffix Sorter type. A Suffix Sorter is expected to provide a sorting algorithm for suffix arrays.</p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>The Suffix Sorter type to be checked. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

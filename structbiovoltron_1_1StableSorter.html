@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Biovoltron: API Documentation</title>
+<title>Biovoltron: biovoltron::StableSorter&lt; size_type_t, sort_len_t &gt; Struct Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -99,7 +99,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-$(document).ready(function(){initNavTree('modules.html',''); initResizable(); });
+$(document).ready(function(){initNavTree('structbiovoltron_1_1StableSorter.html',''); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -118,23 +118,98 @@ $(document).ready(function(){initNavTree('modules.html',''); initResizable(); })
 </div>
 
 <div class="header">
+  <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
+<a href="structbiovoltron_1_1StableSorter-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">API Documentation</div>  </div>
+<div class="title">biovoltron::StableSorter&lt; size_type_t, sort_len_t &gt; Struct Template Reference<div class="ingroups"><a class="el" href="group__algo.html">algo</a> &raquo; <a class="el" href="group__suffix__sorter.html">suffix_sorter</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock">Here is a list of all modules:</div><div class="directory">
-<div class="levels">[detail level <span onclick="javascript:toggleLevel(1);">1</span><span onclick="javascript:toggleLevel(2);">2</span>]</div><table class="directory">
-<tr id="row_0_" class="even"><td class="entry"><span style="width:0px;display:inline-block;">&#160;</span><span id="arr_0_" class="arrow" onclick="toggleFolder('0_')">&#9660;</span><a class="el" href="group__algo.html" target="_self">algo</a></td><td class="desc">The "algo" module provides a collection of string algorithms and data structures tailored for bioinformatics applications </td></tr>
-<tr id="row_0_0_"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><a class="el" href="group__suffix__sorter.html" target="_self">suffix_sorter</a></td><td class="desc">The "suffix_sorter" module offers a versatile set of algorithms for efficient sorting and manipulation of suffix arrays </td></tr>
-<tr id="row_1_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a class="el" href="group__file__io.html" target="_self">file_io</a></td><td class="desc">Handles bioinformatics file formats, simplifying data parsing and manipulation for sequences, alignments, and variants </td></tr>
-<tr id="row_2_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><a class="el" href="group__utility.html" target="_self">utility</a></td><td class="desc">Provides fundamental tools for working with DNA sequences and related data </td></tr>
+
+<p>A stable sorter for suffix arrays.  
+ <a href="structbiovoltron_1_1StableSorter.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="stable__sorter_8hpp_source.html">stable_sorter.hpp</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a2c7d31e552521f1d1ff7d2fa76b5e15e"><td class="memItemLeft" align="right" valign="top"><a id="a2c7d31e552521f1d1ff7d2fa76b5e15e"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>size_type</b> = size_type_t</td></tr>
+<tr class="separator:a2c7d31e552521f1d1ff7d2fa76b5e15e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a46ab69d70ca611c67843de421b34572c"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbiovoltron_1_1StableSorter.html#a46ab69d70ca611c67843de421b34572c">get_sa</a> (istring_view ref)</td></tr>
+<tr class="separator:a46ab69d70ca611c67843de421b34572c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
+Static Public Attributes</h2></td></tr>
+<tr class="memitem:aa4be345ceef96266d191b9e83b89894d"><td class="memItemLeft" align="right" valign="top"><a id="aa4be345ceef96266d191b9e83b89894d"></a>
+static constexpr std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbiovoltron_1_1StableSorter.html#aa4be345ceef96266d191b9e83b89894d">sort_len</a> = sort_len_t</td></tr>
+<tr class="memdesc:aa4be345ceef96266d191b9e83b89894d"><td class="mdescLeft">&#160;</td><td class="mdescRight">The length for sorting. <br /></td></tr>
+<tr class="separator:aa4be345ceef96266d191b9e83b89894d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-</div><!-- directory -->
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><h3>template&lt;std::integral size_type_t = std::uint32_t, std::size_t sort_len_t = istring_view::npos&gt;<br />
+struct biovoltron::StableSorter&lt; size_type_t, sort_len_t &gt;</h3>
+
+<p>A stable sorter for suffix arrays. </p>
+<p>This class provides a stable sorting algorithm for suffix arrays. It allows sorting based on a specified length of suffixes.</p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">size_type</td><td>The data type for size and indices. </td></tr>
+    <tr><td class="paramname">sort_len_t</td><td>The length for sorting (default is istring_view::npos). </td></tr>
+  </table>
+  </dd>
+</dl>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a46ab69d70ca611c67843de421b34572c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a46ab69d70ca611c67843de421b34572c">&#9670;&nbsp;</a></span>get_sa()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;std::integral size_type_t = std::uint32_t, std::size_t sort_len_t = istring_view::npos&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static auto <a class="el" href="structbiovoltron_1_1StableSorter.html">biovoltron::StableSorter</a>&lt; size_type_t, sort_len_t &gt;::get_sa </td>
+          <td>(</td>
+          <td class="paramtype">istring_view&#160;</td>
+          <td class="paramname"><em>ref</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Get the suffix array of a given istring_view.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ref</td><td>The input istring_view. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The sorted suffix array. </dd></dl>
+
+</div>
+</div>
+<hr/>The documentation for this struct was generated from the following file:<ul>
+<li>include/biovoltron/algo/suffix_sorter/<a class="el" href="stable__sorter_8hpp_source.html">stable_sorter.hpp</a></li>
+</ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
+    <li class="navelem"><b>biovoltron</b></li><li class="navelem"><a class="el" href="structbiovoltron_1_1StableSorter.html">StableSorter</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
