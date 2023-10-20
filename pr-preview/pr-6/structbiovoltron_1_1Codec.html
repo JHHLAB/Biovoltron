@@ -1,0 +1,562 @@
+<!-- HTML header for doxygen 1.9.4-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Biovoltron: biovoltron::Codec Struct Reference</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="custom.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript">
+  DoxygenAwesomeParagraphLink.icon = "¶"
+  DoxygenAwesomeFragmentCopyButton.init()
+  DoxygenAwesomeDarkModeToggle.init()
+  DoxygenAwesomeParagraphLink.init()
+  DoxygenAwesomeInteractiveToc.init()
+</script>
+</head>
+<body>
+<a href="https://github.com/JHHLAB/Biovoltron" class="github-corner" title="View source on GitHub" target="_blank">
+    <svg viewBox="0 0 250 250" width="40" height="40" style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+    <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Biovoltron<span id="projectnumber">&#160;v0.0.1-alpha</span>
+   </div>
+   <div id="projectbrief">Bioinformatic tools library using modern C++.</div>
+  </td>
+ </tr>
+   <!--BEGIN FULL_SIDEBAR-->
+   <tr><td colspan="2">        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.svg"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Search" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td></tr>
+   <!--END FULL_SIDEBAR-->
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Search','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Search');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('structbiovoltron_1_1Codec.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
+<a href="structbiovoltron_1_1Codec-members.html">List of all members</a>  </div>
+  <div class="headertitle">
+<div class="title">biovoltron::Codec Struct Reference<div class="ingroups"><a class="el" href="group__utility.html">utility</a></div></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><a class="el" href="structbiovoltron_1_1Codec.html" title="Codec for DNA alphabet to integer conversion.">Codec</a> for DNA alphabet to integer conversion.  
+ <a href="structbiovoltron_1_1Codec.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="istring_8hpp_source.html">istring.hpp</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a2f9362fd947c1dea50321ee13274d5c9"><td class="memItemLeft" align="right" valign="top">constexpr static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbiovoltron_1_1Codec.html#a2f9362fd947c1dea50321ee13274d5c9">to_int</a> (char c) noexcept</td></tr>
+<tr class="separator:a2f9362fd947c1dea50321ee13274d5c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2f8e2bc2a7485a4f1c63b388696a49c"><td class="memItemLeft" align="right" valign="top">constexpr static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbiovoltron_1_1Codec.html#af2f8e2bc2a7485a4f1c63b388696a49c">is_valid</a> (char c) noexcept</td></tr>
+<tr class="separator:af2f8e2bc2a7485a4f1c63b388696a49c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf4f24dde9ea62d029a2e1e293b006d8"><td class="memItemLeft" align="right" valign="top">constexpr static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbiovoltron_1_1Codec.html#abf4f24dde9ea62d029a2e1e293b006d8">to_char</a> (int i) noexcept</td></tr>
+<tr class="separator:abf4f24dde9ea62d029a2e1e293b006d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e653b1ad08f987e0219ecc12f717467"><td class="memItemLeft" align="right" valign="top">constexpr static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbiovoltron_1_1Codec.html#a9e653b1ad08f987e0219ecc12f717467">hash</a> (istring_view seq) noexcept</td></tr>
+<tr class="separator:a9e653b1ad08f987e0219ecc12f717467"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a116259ff4c30b850396e8922e1f93cc4"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbiovoltron_1_1Codec.html#a116259ff4c30b850396e8922e1f93cc4">rhash</a> (std::size_t key, std::size_t size)</td></tr>
+<tr class="separator:a116259ff4c30b850396e8922e1f93cc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34267e306cec79098879b595e2ec103c"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbiovoltron_1_1Codec.html#a34267e306cec79098879b595e2ec103c">rev_comp</a> (istring_view seq)</td></tr>
+<tr class="separator:a34267e306cec79098879b595e2ec103c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2d32c00eeb6f75983fb345964a0f46c"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbiovoltron_1_1Codec.html#ae2d32c00eeb6f75983fb345964a0f46c">to_string</a> (istring_view seq)</td></tr>
+<tr class="separator:ae2d32c00eeb6f75983fb345964a0f46c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3dbafb19c969e68b01e2a87417cc512"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbiovoltron_1_1Codec.html#ae3dbafb19c969e68b01e2a87417cc512">to_istring</a> (std::string_view seq)</td></tr>
+<tr class="separator:ae3dbafb19c969e68b01e2a87417cc512"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3fbb1ac8c1ffa307b7a3a63434bb43b"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbiovoltron_1_1Codec.html#aa3fbb1ac8c1ffa307b7a3a63434bb43b">rev_comp</a> (std::string_view seq)</td></tr>
+<tr class="separator:aa3fbb1ac8c1ffa307b7a3a63434bb43b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
+Static Public Attributes</h2></td></tr>
+<tr class="memitem:aa66a89a27fab98a1ee7c50973d1652a7"><td class="memItemLeft" align="right" valign="top">constexpr static auto&#160;</td><td class="memItemRight" valign="bottom"><b>ints</b></td></tr>
+<tr class="separator:aa66a89a27fab98a1ee7c50973d1652a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b3beddfedaedf9353f812ab1942bcf4"><td class="memItemLeft" align="right" valign="top"><a id="a6b3beddfedaedf9353f812ab1942bcf4"></a>
+constexpr static auto&#160;</td><td class="memItemRight" valign="bottom"><b>chars</b> = std::array{'A', 'C', 'G', 'T', 'N'}</td></tr>
+<tr class="separator:a6b3beddfedaedf9353f812ab1942bcf4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a729272577ef5d30516d28d2fc4176356"><td class="memItemLeft" align="right" valign="top">constexpr static auto&#160;</td><td class="memItemRight" valign="bottom"><b>comp</b></td></tr>
+<tr class="separator:a729272577ef5d30516d28d2fc4176356"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p><a class="el" href="structbiovoltron_1_1Codec.html" title="Codec for DNA alphabet to integer conversion.">Codec</a> for DNA alphabet to integer conversion. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a9e653b1ad08f987e0219ecc12f717467"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e653b1ad08f987e0219ecc12f717467">&#9670;&nbsp;</a></span>hash()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr static auto biovoltron::Codec::hash </td>
+          <td>(</td>
+          <td class="paramtype">istring_view&#160;</td>
+          <td class="paramname"><em>seq</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Calculate a hash value for a DNA sequence. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">seq</td><td>The input DNA sequence. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The calculated hash value. </dd></dl>
+
+</div>
+</div>
+<a id="af2f8e2bc2a7485a4f1c63b388696a49c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af2f8e2bc2a7485a4f1c63b388696a49c">&#9670;&nbsp;</a></span>is_valid()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr static auto biovoltron::Codec::is_valid </td>
+          <td>(</td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>c</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Check if a character is a valid DNA alphabet character. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">c</td><td>Character to check. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the character is a valid DNA alphabet character, false otherwise. </dd></dl>
+
+</div>
+</div>
+<a id="a34267e306cec79098879b595e2ec103c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a34267e306cec79098879b595e2ec103c">&#9670;&nbsp;</a></span>rev_comp() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static auto biovoltron::Codec::rev_comp </td>
+          <td>(</td>
+          <td class="paramtype">istring_view&#160;</td>
+          <td class="paramname"><em>seq</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Reverse complement a DNA sequence. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">seq</td><td>The input DNA sequence. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The reverse complemented DNA sequence. </dd></dl>
+
+</div>
+</div>
+<a id="aa3fbb1ac8c1ffa307b7a3a63434bb43b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa3fbb1ac8c1ffa307b7a3a63434bb43b">&#9670;&nbsp;</a></span>rev_comp() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static auto biovoltron::Codec::rev_comp </td>
+          <td>(</td>
+          <td class="paramtype">std::string_view&#160;</td>
+          <td class="paramname"><em>seq</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Reverse complement a string-based DNA sequence. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">seq</td><td>The input string-based DNA sequence. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The reverse complemented string-based DNA sequence. </dd></dl>
+
+</div>
+</div>
+<a id="a116259ff4c30b850396e8922e1f93cc4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a116259ff4c30b850396e8922e1f93cc4">&#9670;&nbsp;</a></span>rhash()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static auto biovoltron::Codec::rhash </td>
+          <td>(</td>
+          <td class="paramtype">std::size_t&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::size_t&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Reverse hash a hash key to a DNA sequence. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">key</td><td>The hash key to reverse. </td></tr>
+    <tr><td class="paramname">size</td><td>The size of the DNA sequence. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The reversed DNA sequence. </dd></dl>
+
+</div>
+</div>
+<a id="abf4f24dde9ea62d029a2e1e293b006d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf4f24dde9ea62d029a2e1e293b006d8">&#9670;&nbsp;</a></span>to_char()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr static auto biovoltron::Codec::to_char </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>i</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Convert an integer (0-3) to its corresponding DNA alphabet character. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">i</td><td>Integer value (0-3). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The corresponding DNA alphabet character ('A', 'C', 'G', 'T'). </dd></dl>
+
+</div>
+</div>
+<a id="a2f9362fd947c1dea50321ee13274d5c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f9362fd947c1dea50321ee13274d5c9">&#9670;&nbsp;</a></span>to_int()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr static auto biovoltron::Codec::to_int </td>
+          <td>(</td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>c</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>DNA to integer. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">DNA</td><td>alphabet. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A std::int8_t, 0(A), 1(C), 2(G), 3(T). </dd></dl>
+
+</div>
+</div>
+<a id="ae3dbafb19c969e68b01e2a87417cc512"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae3dbafb19c969e68b01e2a87417cc512">&#9670;&nbsp;</a></span>to_istring()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static auto biovoltron::Codec::to_istring </td>
+          <td>(</td>
+          <td class="paramtype">std::string_view&#160;</td>
+          <td class="paramname"><em>seq</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Convert a string-based DNA sequence to an istring (integer-based DNA sequence). </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">seq</td><td>The input string-based DNA sequence. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The converted istring sequence. </dd></dl>
+
+</div>
+</div>
+<a id="ae2d32c00eeb6f75983fb345964a0f46c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae2d32c00eeb6f75983fb345964a0f46c">&#9670;&nbsp;</a></span>to_string()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static auto biovoltron::Codec::to_string </td>
+          <td>(</td>
+          <td class="paramtype">istring_view&#160;</td>
+          <td class="paramname"><em>seq</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Convert an istring (integer-based DNA sequence) to a string-based DNA sequence. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">seq</td><td>The input istring sequence. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The converted string-based DNA sequence. </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a729272577ef5d30516d28d2fc4176356"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a729272577ef5d30516d28d2fc4176356">&#9670;&nbsp;</a></span>comp</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr static auto biovoltron::Codec::comp</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">= [](<span class="keywordtype">char</span> c) {</div>
+<div class="line">    <span class="keywordflow">switch</span> (c) {</div>
+<div class="line">    <span class="keywordflow">case</span> <span class="charliteral">&#39;a&#39;</span>:</div>
+<div class="line">    <span class="keywordflow">case</span> <span class="charliteral">&#39;A&#39;</span>:</div>
+<div class="line">      <span class="keywordflow">return</span> <span class="charliteral">&#39;T&#39;</span>;</div>
+<div class="line">    <span class="keywordflow">case</span> <span class="charliteral">&#39;c&#39;</span>:</div>
+<div class="line">    <span class="keywordflow">case</span> <span class="charliteral">&#39;C&#39;</span>:</div>
+<div class="line">      <span class="keywordflow">return</span> <span class="charliteral">&#39;G&#39;</span>;</div>
+<div class="line">    <span class="keywordflow">case</span> <span class="charliteral">&#39;g&#39;</span>:</div>
+<div class="line">    <span class="keywordflow">case</span> <span class="charliteral">&#39;G&#39;</span>:</div>
+<div class="line">      <span class="keywordflow">return</span> <span class="charliteral">&#39;C&#39;</span>;</div>
+<div class="line">    <span class="keywordflow">case</span> <span class="charliteral">&#39;t&#39;</span>:</div>
+<div class="line">    <span class="keywordflow">case</span> <span class="charliteral">&#39;T&#39;</span>:</div>
+<div class="line">      <span class="keywordflow">return</span> <span class="charliteral">&#39;A&#39;</span>;</div>
+<div class="line">    <span class="keywordflow">default</span>:</div>
+<div class="line">      <span class="keywordflow">return</span> <span class="charliteral">&#39;N&#39;</span>;</div>
+<div class="line">    }</div>
+<div class="line">  }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="aa66a89a27fab98a1ee7c50973d1652a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa66a89a27fab98a1ee7c50973d1652a7">&#9670;&nbsp;</a></span>ints</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr static auto biovoltron::Codec::ints</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">= [] {</div>
+<div class="line">    <span class="keyword">auto</span> ints = std::array&lt;ichar, 128&gt;{};</div>
+<div class="line">    ints.fill(4);</div>
+<div class="line">    ints[<span class="charliteral">&#39;a&#39;</span>] = ints[<span class="charliteral">&#39;A&#39;</span>] = 0;</div>
+<div class="line">    ints[<span class="charliteral">&#39;c&#39;</span>] = ints[<span class="charliteral">&#39;C&#39;</span>] = 1;</div>
+<div class="line">    ints[<span class="charliteral">&#39;g&#39;</span>] = ints[<span class="charliteral">&#39;G&#39;</span>] = 2;</div>
+<div class="line">    ints[<span class="charliteral">&#39;t&#39;</span>] = ints[<span class="charliteral">&#39;T&#39;</span>] = 3;</div>
+<div class="line">    <span class="keywordflow">return</span> ints;</div>
+<div class="line">  }()</div>
+</div><!-- fragment -->
+</div>
+</div>
+<hr/>The documentation for this struct was generated from the following file:<ul>
+<li>include/biovoltron/utility/<a class="el" href="istring_8hpp_source.html">istring.hpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><b>biovoltron</b></li><li class="navelem"><a class="el" href="structbiovoltron_1_1Codec.html">Codec</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
+</body>
+</html>
