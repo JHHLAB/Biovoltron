@@ -1,0 +1,270 @@
+<!-- HTML header for doxygen 1.9.4-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Biovoltron: biovoltron::detail::XbitIterator&lt; N, Block &gt; Struct Template Reference</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="custom.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript">
+  DoxygenAwesomeParagraphLink.icon = "¶"
+  DoxygenAwesomeFragmentCopyButton.init()
+  DoxygenAwesomeDarkModeToggle.init()
+  DoxygenAwesomeParagraphLink.init()
+  DoxygenAwesomeInteractiveToc.init()
+</script>
+</head>
+<body>
+<a href="https://github.com/JHHLAB/Biovoltron" class="github-corner" title="View source on GitHub" target="_blank">
+    <svg viewBox="0 0 250 250" width="40" height="40" style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+    <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Biovoltron<span id="projectnumber">&#160;v0.0.1-alpha</span>
+   </div>
+   <div id="projectbrief">Bioinformatic tools library using modern C++.</div>
+  </td>
+ </tr>
+   <!--BEGIN FULL_SIDEBAR-->
+   <tr><td colspan="2">        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.svg"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Search" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td></tr>
+   <!--END FULL_SIDEBAR-->
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Search','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Search');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('structbiovoltron_1_1detail_1_1XbitIterator.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#friends">Friends</a> &#124;
+<a href="structbiovoltron_1_1detail_1_1XbitIterator-members.html">List of all members</a>  </div>
+  <div class="headertitle">
+<div class="title">biovoltron::detail::XbitIterator&lt; N, Block &gt; Struct Template Reference</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+Inheritance diagram for biovoltron::detail::XbitIterator&lt; N, Block &gt;:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="structbiovoltron_1_1detail_1_1XbitIterator.png" usemap="#biovoltron::detail::XbitIterator_3C_20N_2C_20Block_20_3E_map" alt=""/>
+  <map id="biovoltron::detail::XbitIterator_3C_20N_2C_20Block_20_3E_map" name="biovoltron::detail::XbitIterator_3C_20N_2C_20Block_20_3E_map">
+<area href="classbiovoltron_1_1detail_1_1XbitIteratorBase.html" alt="biovoltron::detail::XbitIteratorBase&lt; N, Block &gt;" shape="rect" coords="0,0,273,24"/>
+  </map>
+</div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a1c586372cbef004fc0c16ca7ef84216e"><td class="memItemLeft" align="right" valign="top"><a id="a1c586372cbef004fc0c16ca7ef84216e"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>Base</b> = <a class="el" href="classbiovoltron_1_1detail_1_1XbitIteratorBase.html">XbitIteratorBase</a>&lt; N, Block &gt;</td></tr>
+<tr class="separator:a1c586372cbef004fc0c16ca7ef84216e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a442471ae040ee2287cb1618f99e1f698"><td class="memItemLeft" align="right" valign="top"><a id="a442471ae040ee2287cb1618f99e1f698"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>iterator_category</b> = Base::iterator_category</td></tr>
+<tr class="separator:a442471ae040ee2287cb1618f99e1f698"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae073a3d27a2007673845f68613d5103e"><td class="memItemLeft" align="right" valign="top"><a id="ae073a3d27a2007673845f68613d5103e"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>value_type</b> = Base::value_type</td></tr>
+<tr class="separator:ae073a3d27a2007673845f68613d5103e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd604d84c8461cc59c023cbac9f4d77a"><td class="memItemLeft" align="right" valign="top"><a id="acd604d84c8461cc59c023cbac9f4d77a"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>difference_type</b> = Base::difference_type</td></tr>
+<tr class="separator:acd604d84c8461cc59c023cbac9f4d77a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8893a3923a31de2f3e4b91c68ceb5814"><td class="memItemLeft" align="right" valign="top"><a id="a8893a3923a31de2f3e4b91c68ceb5814"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>pointer</b> = Base::pointer</td></tr>
+<tr class="separator:a8893a3923a31de2f3e4b91c68ceb5814"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad89c49f9314615b175ce98431ff68bd8"><td class="memItemLeft" align="right" valign="top"><a id="ad89c49f9314615b175ce98431ff68bd8"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>reference</b> = <a class="el" href="classbiovoltron_1_1detail_1_1XbitReference.html">XbitReference</a>&lt; N, Block &gt;</td></tr>
+<tr class="separator:ad89c49f9314615b175ce98431ff68bd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7820cbcc06c8a1304853193828dedf81"><td class="memItemLeft" align="right" valign="top"><a id="a7820cbcc06c8a1304853193828dedf81"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>iterator</b> = <a class="el" href="structbiovoltron_1_1detail_1_1XbitIterator.html">XbitIterator</a></td></tr>
+<tr class="separator:a7820cbcc06c8a1304853193828dedf81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_types_classbiovoltron_1_1detail_1_1XbitIteratorBase"><td colspan="2" onclick="javascript:toggleInherit('pub_types_classbiovoltron_1_1detail_1_1XbitIteratorBase')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="classbiovoltron_1_1detail_1_1XbitIteratorBase.html">biovoltron::detail::XbitIteratorBase&lt; N, Block &gt;</a></td></tr>
+<tr class="memitem:a7104b05a1bdabd2e0bb7613e50c720ed inherit pub_types_classbiovoltron_1_1detail_1_1XbitIteratorBase"><td class="memItemLeft" align="right" valign="top"><a id="a7104b05a1bdabd2e0bb7613e50c720ed"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>iterator_category</b> = std::random_access_iterator_tag</td></tr>
+<tr class="separator:a7104b05a1bdabd2e0bb7613e50c720ed inherit pub_types_classbiovoltron_1_1detail_1_1XbitIteratorBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa01a014fd95b21a538cee9d121328c8e inherit pub_types_classbiovoltron_1_1detail_1_1XbitIteratorBase"><td class="memItemLeft" align="right" valign="top"><a id="aa01a014fd95b21a538cee9d121328c8e"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>value_type</b> = std::uint8_t</td></tr>
+<tr class="separator:aa01a014fd95b21a538cee9d121328c8e inherit pub_types_classbiovoltron_1_1detail_1_1XbitIteratorBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af12ae6091db27630cb0ef1d50061870b inherit pub_types_classbiovoltron_1_1detail_1_1XbitIteratorBase"><td class="memItemLeft" align="right" valign="top"><a id="af12ae6091db27630cb0ef1d50061870b"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>difference_type</b> = std::ptrdiff_t</td></tr>
+<tr class="separator:af12ae6091db27630cb0ef1d50061870b inherit pub_types_classbiovoltron_1_1detail_1_1XbitIteratorBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a486559b934c3fc588f9f5098ba951b66 inherit pub_types_classbiovoltron_1_1detail_1_1XbitIteratorBase"><td class="memItemLeft" align="right" valign="top"><a id="a486559b934c3fc588f9f5098ba951b66"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>pointer</b> = void</td></tr>
+<tr class="separator:a486559b934c3fc588f9f5098ba951b66 inherit pub_types_classbiovoltron_1_1detail_1_1XbitIteratorBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a9461387746eed2ec0c57850b128ac8c4"><td class="memItemLeft" align="right" valign="top"><a id="a9461387746eed2ec0c57850b128ac8c4"></a>
+constexpr&#160;</td><td class="memItemRight" valign="bottom"><b>XbitIterator</b> (Block *seg, std::size_t offset) noexcept</td></tr>
+<tr class="separator:a9461387746eed2ec0c57850b128ac8c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57f4ba2b1d68c05a8614a47942063279"><td class="memItemLeft" align="right" valign="top"><a id="a57f4ba2b1d68c05a8614a47942063279"></a>
+constexpr <a class="el" href="classbiovoltron_1_1detail_1_1XbitReference.html">reference</a>&#160;</td><td class="memItemRight" valign="bottom"><b>operator*</b> () const noexcept</td></tr>
+<tr class="separator:a57f4ba2b1d68c05a8614a47942063279"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11437d578de93046be3fd7f7e2c5313f"><td class="memItemLeft" align="right" valign="top"><a id="a11437d578de93046be3fd7f7e2c5313f"></a>
+constexpr <a class="el" href="classbiovoltron_1_1detail_1_1XbitReference.html">reference</a>&#160;</td><td class="memItemRight" valign="bottom"><b>operator[]</b> (difference_type n) const</td></tr>
+<tr class="separator:a11437d578de93046be3fd7f7e2c5313f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aadac7df4f79c8e492f1d7ba522390f6f"><td class="memItemLeft" align="right" valign="top"><a id="aadac7df4f79c8e492f1d7ba522390f6f"></a>
+constexpr <a class="el" href="structbiovoltron_1_1detail_1_1XbitIterator.html">iterator</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator++</b> ()</td></tr>
+<tr class="separator:aadac7df4f79c8e492f1d7ba522390f6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49270c8b05c25fa8ba3f5660629e1777"><td class="memItemLeft" align="right" valign="top"><a id="a49270c8b05c25fa8ba3f5660629e1777"></a>
+constexpr <a class="el" href="structbiovoltron_1_1detail_1_1XbitIterator.html">iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><b>operator++</b> (int)</td></tr>
+<tr class="separator:a49270c8b05c25fa8ba3f5660629e1777"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac373404f5cd601cc4e85b264b3ec5648"><td class="memItemLeft" align="right" valign="top"><a id="ac373404f5cd601cc4e85b264b3ec5648"></a>
+constexpr <a class="el" href="structbiovoltron_1_1detail_1_1XbitIterator.html">iterator</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator--</b> ()</td></tr>
+<tr class="separator:ac373404f5cd601cc4e85b264b3ec5648"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace6da2dbcaa080f0fb6ef35d67da1378"><td class="memItemLeft" align="right" valign="top"><a id="ace6da2dbcaa080f0fb6ef35d67da1378"></a>
+constexpr <a class="el" href="structbiovoltron_1_1detail_1_1XbitIterator.html">iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><b>operator--</b> (int)</td></tr>
+<tr class="separator:ace6da2dbcaa080f0fb6ef35d67da1378"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c676734b0660447d349387208abe1d3"><td class="memItemLeft" align="right" valign="top"><a id="a3c676734b0660447d349387208abe1d3"></a>
+constexpr <a class="el" href="structbiovoltron_1_1detail_1_1XbitIterator.html">iterator</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator+=</b> (difference_type n)</td></tr>
+<tr class="separator:a3c676734b0660447d349387208abe1d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04b91baf1fd8bf6760dc2c1d3b0f2346"><td class="memItemLeft" align="right" valign="top"><a id="a04b91baf1fd8bf6760dc2c1d3b0f2346"></a>
+constexpr <a class="el" href="structbiovoltron_1_1detail_1_1XbitIterator.html">iterator</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator-=</b> (difference_type n)</td></tr>
+<tr class="separator:a04b91baf1fd8bf6760dc2c1d3b0f2346"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af47472c318d3261b923322e3497f11eb"><td class="memItemLeft" align="right" valign="top"><a id="af47472c318d3261b923322e3497f11eb"></a>
+constexpr <a class="el" href="structbiovoltron_1_1detail_1_1XbitIterator.html">iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><b>operator+</b> (difference_type n) const</td></tr>
+<tr class="separator:af47472c318d3261b923322e3497f11eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86cd64dd941a3b369b7aa2ef5b7e1f6d"><td class="memItemLeft" align="right" valign="top"><a id="a86cd64dd941a3b369b7aa2ef5b7e1f6d"></a>
+constexpr <a class="el" href="structbiovoltron_1_1detail_1_1XbitIterator.html">iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><b>operator-</b> (difference_type n) const</td></tr>
+<tr class="separator:a86cd64dd941a3b369b7aa2ef5b7e1f6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classbiovoltron_1_1detail_1_1XbitIteratorBase"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classbiovoltron_1_1detail_1_1XbitIteratorBase')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classbiovoltron_1_1detail_1_1XbitIteratorBase.html">biovoltron::detail::XbitIteratorBase&lt; N, Block &gt;</a></td></tr>
+<tr class="memitem:aa02ac1221ff665b779609d0a0982d7bd inherit pub_methods_classbiovoltron_1_1detail_1_1XbitIteratorBase"><td class="memItemLeft" align="right" valign="top"><a id="aa02ac1221ff665b779609d0a0982d7bd"></a>
+constexpr&#160;</td><td class="memItemRight" valign="bottom"><b>XbitIteratorBase</b> (Block *seg, std::size_t offset) noexcept</td></tr>
+<tr class="separator:aa02ac1221ff665b779609d0a0982d7bd inherit pub_methods_classbiovoltron_1_1detail_1_1XbitIteratorBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaae71ad5498e1ae83e4c68338ac2a1b4 inherit pub_methods_classbiovoltron_1_1detail_1_1XbitIteratorBase"><td class="memItemLeft" align="right" valign="top"><a id="aaae71ad5498e1ae83e4c68338ac2a1b4"></a>
+constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator==</b> (const <a class="el" href="classbiovoltron_1_1detail_1_1XbitIteratorBase.html">XbitIteratorBase</a> &amp;other) const noexcept=default</td></tr>
+<tr class="separator:aaae71ad5498e1ae83e4c68338ac2a1b4 inherit pub_methods_classbiovoltron_1_1detail_1_1XbitIteratorBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac72a4b87ba9f076a97e08cf99bc55700 inherit pub_methods_classbiovoltron_1_1detail_1_1XbitIteratorBase"><td class="memItemLeft" align="right" valign="top"><a id="ac72a4b87ba9f076a97e08cf99bc55700"></a>
+constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><b>operator&lt;=&gt;</b> (const <a class="el" href="classbiovoltron_1_1detail_1_1XbitIteratorBase.html">XbitIteratorBase</a> &amp;other) const noexcept</td></tr>
+<tr class="separator:ac72a4b87ba9f076a97e08cf99bc55700 inherit pub_methods_classbiovoltron_1_1detail_1_1XbitIteratorBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
+Friends</h2></td></tr>
+<tr class="memitem:a671cc3ed759b89870da50ed604fcc554"><td class="memTemplParams" colspan="2"><a id="a671cc3ed759b89870da50ed604fcc554"></a>
+template&lt;std::size_t , std::unsigned_integral &gt; </td></tr>
+<tr class="memitem:a671cc3ed759b89870da50ed604fcc554"><td class="memTemplItemLeft" align="right" valign="top">class&#160;</td><td class="memTemplItemRight" valign="bottom"><b>XbitConstIterator</b></td></tr>
+<tr class="separator:a671cc3ed759b89870da50ed604fcc554"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a308025990ed5bc443a648a685e61fc0f"><td class="memItemLeft" align="right" valign="top"><a id="a308025990ed5bc443a648a685e61fc0f"></a>
+constexpr friend <a class="el" href="structbiovoltron_1_1detail_1_1XbitIterator.html">iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><b>operator+</b> (difference_type n, const <a class="el" href="structbiovoltron_1_1detail_1_1XbitIterator.html">iterator</a> &amp;it)</td></tr>
+<tr class="separator:a308025990ed5bc443a648a685e61fc0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pub_static_attribs_classbiovoltron_1_1detail_1_1XbitIteratorBase"><td colspan="2" onclick="javascript:toggleInherit('pub_static_attribs_classbiovoltron_1_1detail_1_1XbitIteratorBase')"><img src="closed.png" alt="-"/>&#160;Static Public Attributes inherited from <a class="el" href="classbiovoltron_1_1detail_1_1XbitIteratorBase.html">biovoltron::detail::XbitIteratorBase&lt; N, Block &gt;</a></td></tr>
+<tr class="memitem:a385dbf70badcdfa017cee4b1ab519607 inherit pub_static_attribs_classbiovoltron_1_1detail_1_1XbitIteratorBase"><td class="memItemLeft" align="right" valign="top"><a id="a385dbf70badcdfa017cee4b1ab519607"></a>
+constexpr static std::size_t&#160;</td><td class="memItemRight" valign="bottom"><b>xbits_per_block</b> = sizeof(Block) * CHAR_BIT / N</td></tr>
+<tr class="separator:a385dbf70badcdfa017cee4b1ab519607 inherit pub_static_attribs_classbiovoltron_1_1detail_1_1XbitIteratorBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_classbiovoltron_1_1detail_1_1XbitIteratorBase"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classbiovoltron_1_1detail_1_1XbitIteratorBase')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classbiovoltron_1_1detail_1_1XbitIteratorBase.html">biovoltron::detail::XbitIteratorBase&lt; N, Block &gt;</a></td></tr>
+<tr class="memitem:a944fea330513439457948714360b39f5 inherit pro_methods_classbiovoltron_1_1detail_1_1XbitIteratorBase"><td class="memItemLeft" align="right" valign="top"><a id="a944fea330513439457948714360b39f5"></a>
+constexpr void&#160;</td><td class="memItemRight" valign="bottom"><b>bump_up</b> ()</td></tr>
+<tr class="separator:a944fea330513439457948714360b39f5 inherit pro_methods_classbiovoltron_1_1detail_1_1XbitIteratorBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a127984e17ed3abdf8a50d930a0648712 inherit pro_methods_classbiovoltron_1_1detail_1_1XbitIteratorBase"><td class="memItemLeft" align="right" valign="top"><a id="a127984e17ed3abdf8a50d930a0648712"></a>
+constexpr void&#160;</td><td class="memItemRight" valign="bottom"><b>bump_down</b> ()</td></tr>
+<tr class="separator:a127984e17ed3abdf8a50d930a0648712 inherit pro_methods_classbiovoltron_1_1detail_1_1XbitIteratorBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adaaf0effdfa1b28260aa087dcc2f2998 inherit pro_methods_classbiovoltron_1_1detail_1_1XbitIteratorBase"><td class="memItemLeft" align="right" valign="top"><a id="adaaf0effdfa1b28260aa087dcc2f2998"></a>
+constexpr void&#160;</td><td class="memItemRight" valign="bottom"><b>incr</b> (difference_type n)</td></tr>
+<tr class="separator:adaaf0effdfa1b28260aa087dcc2f2998 inherit pro_methods_classbiovoltron_1_1detail_1_1XbitIteratorBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_classbiovoltron_1_1detail_1_1XbitIteratorBase"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classbiovoltron_1_1detail_1_1XbitIteratorBase')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classbiovoltron_1_1detail_1_1XbitIteratorBase.html">biovoltron::detail::XbitIteratorBase&lt; N, Block &gt;</a></td></tr>
+<tr class="memitem:a8bbf2c4b411790abb064377bc63bef97 inherit pro_attribs_classbiovoltron_1_1detail_1_1XbitIteratorBase"><td class="memItemLeft" align="right" valign="top"><a id="a8bbf2c4b411790abb064377bc63bef97"></a>
+Block *&#160;</td><td class="memItemRight" valign="bottom"><b>seg_</b></td></tr>
+<tr class="separator:a8bbf2c4b411790abb064377bc63bef97 inherit pro_attribs_classbiovoltron_1_1detail_1_1XbitIteratorBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9775cdf90ee5cf82b2e104e4be4a4b5 inherit pro_attribs_classbiovoltron_1_1detail_1_1XbitIteratorBase"><td class="memItemLeft" align="right" valign="top"><a id="ae9775cdf90ee5cf82b2e104e4be4a4b5"></a>
+std::size_t&#160;</td><td class="memItemRight" valign="bottom"><b>offset_</b></td></tr>
+<tr class="separator:ae9775cdf90ee5cf82b2e104e4be4a4b5 inherit pro_attribs_classbiovoltron_1_1detail_1_1XbitIteratorBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<hr/>The documentation for this struct was generated from the following file:<ul>
+<li>include/biovoltron/container/<a class="el" href="xbit__vector_8hpp_source.html">xbit_vector.hpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><b>biovoltron</b></li><li class="navelem"><b>detail</b></li><li class="navelem"><a class="el" href="structbiovoltron_1_1detail_1_1XbitIterator.html">XbitIterator</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
+</body>
+</html>
