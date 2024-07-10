@@ -30,4 +30,5 @@
  */
 
 #include <biovoltron/algo/suffix_sorter/core/suffix_sorter.hpp>
+#include <biovoltron/algo/suffix_sorter/sais_sorter.hpp>
 #include <biovoltron/algo/suffix_sorter/stable_sorter.hpp>
