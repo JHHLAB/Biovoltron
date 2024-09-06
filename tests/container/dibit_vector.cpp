@@ -3,6 +3,7 @@
 #include <catch.hpp>
 #include <filesystem>
 #include <fstream>
+#include <iterator>
 #include <random>
 #include <sstream>
 #include <vector>

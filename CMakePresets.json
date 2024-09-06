@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "configurePresets": [
+    {
+      "name": "default",
+      "generator": "Ninja",
+      "binaryDir": "${sourceDir}/build",
+      "cacheVariables": {
+	"CMAKE_C_COMPILER": "/usr/bin/gcc",
+	"CMAKE_CXX_COMPILER": "/usr/bin/g++",
+	"VCPKG_OVERLAY_PORTS": "vcpkg/ports",
+	"CMAKE_TOOLCHAIN_FILE": "$env{VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake"
+      }
+    }
+  ]
+}

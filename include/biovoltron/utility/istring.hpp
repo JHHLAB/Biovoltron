@@ -2,6 +2,7 @@
 
 #include <algorithm>
 #include <istream>
+#include <array>
 #include <ostream>
 
 namespace biovoltron {

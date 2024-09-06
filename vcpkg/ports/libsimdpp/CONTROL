@@ -1,0 +1,4 @@
+Source: libsimdpp
+Version: 2.1
+Description: Portable header-only zero-overhead SIMD library
+Build-Depends: 

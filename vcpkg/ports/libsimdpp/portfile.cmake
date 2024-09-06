@@ -1,0 +1,13 @@
+vcpkg_from_github(
+    OUT_SOURCE_PATH SOURCE_PATH
+    REPO p12tic/libsimdpp
+    REF 55860b502f4d3f82faf99817181af0a50996b392
+    SHA512 f54bf96ba33292586cc27eb17e8cb26378b0647313733f13816238a875f884e5731cb0eca66336a1d75613e6b878d10a8e8fbbb6b5f1d4febbb64c78b9734760
+)
+file(GLOB_RECURSE HEADER_FILES "${SOURCE_PATH}/simdpp/*.h")
+
+file(MAKE_DIRECTORY "${CURRENT_PACKAGES_DIR}/include/simdpp")
+foreach(header ${HEADER_FILES})
+    file(COPY ${header} DESTINATION ${CURRENT_PACKAGES_DIR}/include/simdpp)
+endforeach()
+
